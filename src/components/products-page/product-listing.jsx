@@ -62,13 +62,13 @@ const ProductListing = () => {
           <>
             <button
               onClick={prevImage}
-              className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white bg-opacity-50 rounded-full p-1"
+              className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 text-white rounded-full p-2 hover:bg-opacity-90 transition-all duration-200"
             >
               &#8249;
             </button>
             <button
               onClick={nextImage}
-              className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white bg-opacity-50 rounded-full p-1"
+              className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 text-white rounded-full p-2 hover:bg-opacity-90 transition-all duration-200"
             >
               &#8250;
             </button>
@@ -92,7 +92,7 @@ const ProductListing = () => {
           <button
             key={pageNumber}
             onClick={() => paginate(pageNumber)}
-            className={`mx-1 px-3 py-1 border rounded ${
+            className={`mx-1 px-3 py-1 border rounded my-2 ${
               currentPage === pageNumber ? "bg-blue-500 text-white" : "bg-white"
             }`}
           >
